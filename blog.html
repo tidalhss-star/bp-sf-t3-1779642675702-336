@@ -1,342 +1,340 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서버 웜업 블로그 | 강남 셔츠룸 마포 | 직영 오피셜</title>
-    <meta name="description" content="서버 웜업의 정석. 강남 셔츠룸 마포 지점이 전하는 진짜 정보. 타협 없는 퍼포먼스의 비밀, 지금 확인하세요.">
-    <meta name="keywords" content="강남 셔츠룸, 마포 셔츠룸, 서버 웜업, 셔츠룸 정보, 강남 유흥, 마포 유흥, 블로그">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://sf-t3-1779642675702-336.maphoshirts.today/blog.html">
-    <meta property="og:title" content="서버 웜업 블로그 | 강남 셔츠룸 마포 | 직영 오피셜">
-    <meta property="og:description" content="서버 웜업의 정석. 강남 셔츠룸 마포 지점이 전하는 진짜 정보. 타협 없는 퍼포먼스의 비밀, 지금 확인하세요.">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="서버 웜업의 진실 | 강남 셔츠룸 마포 직영 블로그">
-    <meta name="twitter:description" content="서버 웜업 끝판왕. 강남 셔츠룸 마포 지점이 직접 쓰는 정보.">
-    <style>
-        /* ===== RESET & BASE ===== */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-            background: #0a0a0a;
-        }
-        body {
-            font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(145deg, #0a0a0a 0%, #0d0d0d 100%);
-            color: #f0ece4;
-            line-height: 1.6;
-            min-height: 100vh;
-            padding: 0 1rem;
-            overflow-x: hidden;
-        }
-        /* ===== TYPOGRAPHY ===== */
-        h1 {
-            font-size: 3.2rem;
-            font-weight: 800;
-            letter-spacing: -0.04em;
-            text-transform: uppercase;
-            color: #fff;
-            text-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 0 0 40px rgba(255, 200, 100, 0.2);
-            line-height: 1.1;
-        }
-        h2 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            color: #ffe6a7;
-            border-left: 6px solid #ff6633;
-            padding-left: 1rem;
-            margin: 2rem 0 1.2rem;
-        }
-        h3 {
-            font-size: 1.6rem;
-            font-weight: 600;
-            color: #ffaa55;
-            margin: 1.6rem 0 0.8rem;
-        }
-        p {
-            font-size: 1.08rem;
-            line-height: 1.7;
-            color: #ccc;
-            margin-bottom: 1.2rem;
-            max-width: 720px;
-        }
-        a {
-            color: #ff6633;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-            transition: all 0.15s ease;
-        }
-        a:hover {
-            color: #ffaa55;
-            text-shadow: 0 0 8px rgba(255, 102, 51, 0.6);
-        }
-        strong {
-            color: #fff;
-            font-weight: 700;
-        }
-        /* ===== UTILITY ===== */
-        .full-bleed {
-            width: 100vw;
-            margin-left: calc(50% - 50vw);
-            margin-right: calc(50% - 50vw);
-        }
-        .skew-left {
-            transform: skewX(-4deg);
-            transform-origin: left;
-        }
-        .skew-right {
-            transform: skewX(4deg);
-            transform-origin: right;
-        }
-        /* ===== CONTAINER ===== */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-        /* ===== NAV ===== */
-        nav.nav-present {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.2rem 0;
-            border-bottom: 2px solid #222;
-            background: #0a0a0a;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(10px);
-        }
-        nav .logo a {
-            font-size: 1.6rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #fff;
-            text-decoration: none;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-        }
-        nav .nav-links {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            list-style: none;
-        }
-        nav .nav-links a {
-            color: #aaa;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: color 0.2s;
-        }
-        nav .nav-links a:hover {
-            color: #ff6633;
-        }
-        nav .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            background: transparent;
-            border: none;
-            padding: 4px;
-        }
-        nav .hamburger-menu span {
-            width: 28px;
-            height: 3px;
-            background: #fff;
-            border-radius: 2px;
-            transition: 0.3s;
-        }
-        nav .tel-link a {
-            display: inline-block;
-            background: #ff6633;
-            color: #fff;
-            padding: 0.5rem 1.2rem;
-            border-radius: 30px;
-            font-weight: 700;
-            text-decoration: none;
-            font-size: 0.95rem;
-            letter-spacing: 0.05em;
-            transition: background 0.2s, transform 0.1s;
-        }
-        nav .tel-link a:hover {
-            background: #e05522;
-            transform: scale(1.04);
-        }
-        /* ===== HERO / BLOG HEADER ===== */
-        .blog-header {
-            margin: 3rem 0 2rem;
-            border-bottom: 2px solid #1f1f1f;
-            padding-bottom: 1.6rem;
-        }
-        .blog-header .cat {
-            color: #ff6633;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            font-size: 0.9rem;
-            margin-bottom: 0.4rem;
-        }
-        .blog-header h1 {
-            margin: 0.2rem 0 0.6rem;
-        }
-        .blog-header .meta {
-            color: #777;
-            font-size: 0.9rem;
-        }
-        /* ===== ARTICLE ===== */
-        article {
-            padding: 0.5rem 0 3rem;
-        }
-        article p {
-            font-size: 1.08rem;
-            color: #ccc;
-        }
-        article blockquote {
-            border-left: 6px solid #ff6633;
-            background: rgba(255, 102, 51, 0.08);
-            padding: 1.4rem 1.8rem;
-            margin: 1.8rem 0;
-            font-style: italic;
-            color: #eee;
-        }
-        article blockquote p {
-            margin: 0;
-        }
-        /* ===== RESPONSIVE 768 ===== */
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.6rem; }
-            h3 { font-size: 1.3rem; }
-            nav .nav-links {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #0a0a0a;
-                border-bottom: 2px solid #222;
-                padding: 1rem 2rem;
-                gap: 1rem;
-                transform: translateY(-100%);
-                opacity: 0;
-                pointer-events: none;
-                transition: 0.3s ease;
-                z-index: 99;
-            }
-            nav .nav-links.active {
-                transform: translateY(0);
-                opacity: 1;
-                pointer-events: all;
-            }
-            nav .hamburger-menu {
-                display: flex;
-            }
-            nav .tel-link {
-                margin-left: auto;
-            }
-            .blog-header h1 {
-                font-size: 2rem;
-            }
-        }
-        /* ===== FOOTER (minimal) ===== */
-        footer {
-            border-top: 2px solid #1a1a1a;
-            padding: 2rem 0;
-            text-align: center;
-            color: #555;
-            font-size: 0.85rem;
-        }
-        footer a {
-            color: #888;
-        }
-    </style>
-  <meta property="og:url" content="https://sf-t3-1779642675702-336.maphoshirts.today/blog.html">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>서버 웜업 블로그 | 강남 셔츠룸 마포 | 직영 오피셜</title>
+ <meta name="description" content="서버 웜업의 정석. 강남 셔츠룸 마포 지점이 전하는 진짜 정보. 타협 없는 퍼포먼스의 비밀, 지금 확인하세요.">
+ <meta name="keywords" content="강남 셔츠룸, 마포 셔츠룸, 서버 웜업, 셔츠룸 정보, 강남 유흥, 마포 유흥, 블로그">
+ <link rel="canonical" href="https://sf-t3-1779642675702-336.maphoshirts.today/blog.html">
+ <meta property="og:title" content="서버 웜업 블로그 | 강남 셔츠룸 마포 | 직영 오피셜">
+ <meta property="og:description" content="서버 웜업의 정석. 강남 셔츠룸 마포 지점이 전하는 진짜 정보. 타협 없는 퍼포먼스의 비밀, 지금 확인하세요.">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="서버 웜업의 진실 | 강남 셔츠룸 마포 직영 블로그">
+ <meta name="twitter:description" content="서버 웜업 끝판왕. 강남 셔츠룸 마포 지점이 직접 쓰는 정보.">
+ <style>
+ /* ===== RESET & BASE ===== */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ background: #0a0a0a;
+ }
+ body {
+ font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+ background: linear-gradient(145deg, #0a0a0a 0%, #0d0d0d 100%);
+ color: #f0ece4;
+ line-height: 1.6;
+ min-height: 100vh;
+ padding: 0 1rem;
+ overflow-x: hidden;
+ }
+ /* ===== TYPOGRAPHY ===== */
+ h1 {
+ font-size: 3.2rem;
+ font-weight: 800;
+ letter-spacing: -0.04em;
+ text-transform: uppercase;
+ color: #fff;
+ text-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 0 0 40px rgba(255, 200, 100, 0.2);
+ line-height: 1.1;
+ }
+ h2 {
+ font-size: 2.2rem;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ color: #ffe6a7;
+ border-left: 6px solid #ff6633;
+ padding-left: 1rem;
+ margin: 2rem 0 1.2rem;
+ }
+ h3 {
+ font-size: 1.6rem;
+ font-weight: 600;
+ color: #ffaa55;
+ margin: 1.6rem 0 0.8rem;
+ }
+ p {
+ font-size: 1.08rem;
+ line-height: 1.7;
+ color: #ccc;
+ margin-bottom: 1.2rem;
+ max-width: 720px;
+ }
+ a {
+ color: #ff6633;
+ text-decoration: underline;
+ text-underline-offset: 3px;
+ transition: all 0.15s ease;
+ }
+ a:hover {
+ color: #ffaa55;
+ text-shadow: 0 0 8px rgba(255, 102, 51, 0.6);
+ }
+ strong {
+ color: #fff;
+ font-weight: 700;
+ }
+ /* ===== UTILITY ===== */
+ .full-bleed {
+ width: 100vw;
+ margin-left: calc(50% - 50vw);
+ margin-right: calc(50% - 50vw);
+ }
+ .skew-left {
+ transform: skewX(-4deg);
+ transform-origin: left;
+ }
+ .skew-right {
+ transform: skewX(4deg);
+ transform-origin: right;
+ }
+ /* ===== CONTAINER ===== */
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 2rem 1rem;
+ }
+ /* ===== NAV ===== */
+ nav.nav-present {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1.2rem 0;
+ border-bottom: 2px solid #222;
+ background: #0a0a0a;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ backdrop-filter: blur(10px);
+ }
+ nav .logo a {
+ font-size: 1.6rem;
+ font-weight: 800;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ color: #fff;
+ text-decoration: none;
+ text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+ }
+ nav .nav-links {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ list-style: none;
+ }
+ nav .nav-links a {
+ color: #aaa;
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 1rem;
+ transition: color 0.2s;
+ }
+ nav .nav-links a:hover {
+ color: #ff6633;
+ }
+ nav .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ background: transparent;
+ border: none;
+ padding: 4px;
+ }
+ nav .hamburger-menu span {
+ width: 28px;
+ height: 3px;
+ background: #fff;
+ border-radius: 2px;
+ transition: 0.3s;
+ }
+ nav .tel-link a {
+ display: inline-block;
+ background: #ff6633;
+ color: #fff;
+ padding: 0.5rem 1.2rem;
+ border-radius: 30px;
+ font-weight: 700;
+ text-decoration: none;
+ font-size: 0.95rem;
+ letter-spacing: 0.05em;
+ transition: background 0.2s, transform 0.1s;
+ }
+ nav .tel-link a:hover {
+ background: #e05522;
+ transform: scale(1.04);
+ }
+ /* ===== HERO / BLOG HEADER ===== */
+ .blog-header {
+ margin: 3rem 0 2rem;
+ border-bottom: 2px solid #1f1f1f;
+ padding-bottom: 1.6rem;
+ }
+ .blog-header .cat {
+ color: #ff6633;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.15em;
+ font-size: 0.9rem;
+ margin-bottom: 0.4rem;
+ }
+ .blog-header h1 {
+ margin: 0.2rem 0 0.6rem;
+ }
+ .blog-header .meta {
+ color: #777;
+ font-size: 0.9rem;
+ }
+ /* ===== ARTICLE ===== */
+ article {
+ padding: 0.5rem 0 3rem;
+ }
+ article p {
+ font-size: 1.08rem;
+ color: #ccc;
+ }
+ article blockquote {
+ border-left: 6px solid #ff6633;
+ background: rgba(255, 102, 51, 0.08);
+ padding: 1.4rem 1.8rem;
+ margin: 1.8rem 0;
+ font-style: italic;
+ color: #eee;
+ }
+ article blockquote p {
+ margin: 0;
+ }
+ /* ===== RESPONSIVE 768 ===== */
+ @media (max-width: 768px) {
+ h1 { font-size: 2.2rem; }
+ h2 { font-size: 1.6rem; }
+ h3 { font-size: 1.3rem; }
+ nav .nav-links {
+ display: flex;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ background: #0a0a0a;
+ border-bottom: 2px solid #222;
+ padding: 1rem 2rem;
+ gap: 1rem;
+ transform: translateY(-100%);
+ opacity: 0;
+ pointer-events: none;
+ transition: 0.3s ease;
+ z-index: 99;
+ }
+ nav .nav-links.active {
+ transform: translateY(0);
+ opacity: 1;
+ pointer-events: all;
+ }
+ nav .hamburger-menu {
+ display: flex;
+ }
+ nav .tel-link {
+ margin-left: auto;
+ }
+ .blog-header h1 {
+ font-size: 2rem;
+ }
+ }
+ /* ===== FOOTER (minimal) ===== */
+ footer {
+ border-top: 2px solid #1a1a1a;
+ padding: 2rem 0;
+ text-align: center;
+ color: #555;
+ font-size: 0.85rem;
+ }
+ footer a {
+ color: #888;
+ }
+ </style>
+ <meta property="og:url" content="https://sf-t3-1779642675702-336.maphoshirts.today/blog.html">
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta property="og:type" content="website">
 </head>
 <body>
 
 <nav class="nav-present container">
-    <div class="logo">
-        <a href="/">WARMUP.KR</a>
-    </div>
-    <ul class="nav-links" id="navLinks">
-        <li><a href="/">홈</a></li>
-        <li><a href="/info">정보</a></li>
-        <li><a href="/blog">블로그</a></li>
-        <li><a href="/contact">문의</a></li>
-        <li class="tel-link"><a href="tel:010-6279-0862">010-6279-0862</a></li>
-    </ul>
-    <button class="hamburger-menu" id="hamburgerBtn" aria-label="메뉴 열기">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+ <div class="logo">
+ <a href="/">WARMUP.KR</a>
+ </div>
+ <ul class="nav-links" id="navLinks">
+ <li><a href="/">홈</a></li>
+ <li><a href="/info">정보</a></li>
+ <li><a href="/blog">블로그</a></li>
+ <li><a href="/contact">문의</a></li>
+ 
+ </ul>
+ <button class="hamburger-menu" id="hamburgerBtn" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </button>
 </nav>
 
 <main class="container">
-    <div class="blog-header">
-        <div class="cat">🔴 서버 웜업 인사이드</div>
-        <h1>진짜 서버 웜업, 가짜는 걸러라</h1>
-        <div class="meta">2025.04.01 · by AEGIS-WARMER · 5 min read</div>
-    </div>
+ <div class="blog-header">
+ <div class="cat">🔴 서버 웜업 인사이드</div>
+ <h1>진짜 서버 웜업, 가짜는 걸러라</h1>
+ <div class="meta">2025.04.01 · by AEGIS-WARMER · 5 min read</div>
+ </div>
 
-    <article>
-        <p><strong>강남 셔츠룸 마포 지점</strong>, 우리는 3년째 현장에서 직접 몸으로 부딪히고 있다. 서버 웜업이라는 단어, 요즘 너저분하게 쓰이고 있다. 이 동네에서 '웜업'을 파는 업소는 수도 없지만, 진짜와 가짜는 하늘과 땅 차이다. 우리가 직접 경험하고 검증한 사실들만 적는다.</p>
+ <article>
+ <p><strong>강남 셔츠룸 마포 지점</strong>, 우리는 3년째 현장에서 직접 몸으로 부딪히고 있다. 서버 웜업이라는 단어, 요즘 너저분하게 쓰이고 있다. 이 동네에서 '웜업'을 파는 업소는 수도 없지만, 진짜와 가짜는 하늘과 땅 차이다. 우리가 직접 경험하고 검증한 사실들만 적는다.</p>
 
-        <p>서버 웜업의 본질은 <strong>턴키 퍼포먼스</strong>다. 입구에서부터 시스템이 돌아가야 한다. 조명, 음향, 인원 동선, 그리고 가장 중요한 — 분위기를 끌어올리는 '그 타이밍' 말이다. 강남 셔츠룸 출신 운영진이 직접 설계한 마포 지점의 웜업 시스템은 그냥 메뉴판 하나로 끝나지 않는다.</p>
+ <p>서버 웜업의 본질은 <strong>턴키 퍼포먼스</strong>다. 입구에서부터 시스템이 돌아가야 한다. 조명, 음향, 인원 동선, 그리고 가장 중요한 — 분위기를 끌어올리는 '그 타이밍' 말이다. 강남 셔츠룸 출신 운영진이 직접 설계한 마포 지점의 웜업 시스템은 그냥 메뉴판 하나로 끝나지 않는다.</p>
 
-        <h2>웜업? 그냥 술 따라주는 게 아니다</h2>
-        <p>요즘 웬만한 곳들은 '웜업 서비스'라는 이름표만 붙여놓고 기본조차 안 된다. 진짜 웜업은 <strong>게임 체인저</strong>여야 한다. 우리는 30분 안에 고객의 텐션을 최대치로 끌어올리는 루틴을 갖추고 있다. 이유? 단순하다. 시간은 돈이고, 지루한 자리엔 재방문이 없다.</p>
+ <h2>웜업? 그냥 술 따라주는 게 아니다</h2>
+ <p>요즘 웬만한 곳들은 '웜업 서비스'라는 이름표만 붙여놓고 기본조차 안 된다. 진짜 웜업은 <strong>게임 체인저</strong>여야 한다. 우리는 30분 안에 고객의 텐션을 최대치로 끌어올리는 루틴을 갖추고 있다. 이유? 단순하다. 시간은 돈이고, 지루한 자리엔 재방문이 없다.</p>
 
-        <p>강남 셔츠룸 마포 직영은 이걸 완벽하게 시스템화했다. 웜업 팀은 정기 트레이닝을 받고, 각 세션마다 피드백을 기록한다. 심지어 고객이 원하는 톤과 속도까지 사전에 체크한다. <strong>"기계 같은 서비스는 없다."</strong> 살아있는 웜업, 그게 우리의 방식이다.</p>
+ <p>강남 셔츠룸 마포 직영은 이걸 완벽하게 시스템화했다. 웜업 팀은 정기 트레이닝을 받고, 각 세션마다 피드백을 기록한다. 심지어 고객이 원하는 톤과 속도까지 사전에 체크한다. <strong>"기계 같은 서비스는 없다."</strong> 살아있는 웜업, 그게 우리의 방식이다.</p>
 
-        <blockquote>
-            <p>“서버 웜업은 단순한 이벤트가 아니라, 밤의 흐름을 지배하는 전략이다. 준비되지 않은 업소는 그저 시간만 축낼 뿐.” — 마포 지점 총괄</p>
-        </blockquote>
+ <blockquote>
+ <p>“서버 웜업은 단순한 이벤트가 아니라, 밤의 흐름을 지배하는 전략이다. 준비되지 않은 업소는 그저 시간만 축낼 뿐.” — 마포 지점 총괄</p>
+ </blockquote>
 
-        <h3>마포 vs 강남? 진짜 승부는 다르다</h3>
-        <p>사람들은 "강남이 더 좋지 않냐"고 묻는다. 하지만 마포는 다르다. <strong>접근성, 공간감, 그리고 숨겨진 카리스마</strong>. 강남 셔츠룸 마포 지점은 강남 본점의 노하우를 그대로 가져오면서도, 마포 특유의 자유로운 에너지를 입혔다. 웜업 단계에서부터 이 차이는 확연하다.</p>
+ <h3>마포 vs 강남? 진짜 승부는 다르다</h3>
+ <p>사람들은 "강남이 더 좋지 않냐"고 묻는다. 하지만 마포는 다르다. <strong>접근성, 공간감, 그리고 숨겨진 카리스마</strong>. 강남 셔츠룸 마포 지점은 강남 본점의 노하우를 그대로 가져오면서도, 마포 특유의 자유로운 에너지를 입혔다. 웜업 단계에서부터 이 차이는 확연하다.</p>
 
-        <p>우리는 페이크를 치지 않는다. 전화 한 통이면, 당신이 원하는 수준의 웜업이 바로 연결된다. <a href="tel:010-6279-0862">010-6279-0862</a>. 지금 걸어라. 상담은 기본, 당일 예약도 가능하다. 서버 웜업의 진짜 맛을 보고 싶다면, 다른 곳은 잊어라.</p>
+ <p>우리는 페이크를 치지 않는다. 전화 한 통이면, 당신이 원하는 수준의 웜업이 바로 연결된다. . 지금 걸어라. 상담은 기본, 당일 예약도 가능하다. 서버 웜업의 진짜 맛을 보고 싶다면, 다른 곳은 잊어라.</p>
 
-        <p>좋은 웜업은 결과로 말한다. 우리는 매주 업데이트되는 데이터와 고객 리뷰로 증명한다. 강남 셔츠룸 마포 — 여기가 끝판왕이다.</p>
-    </article>
+ <p>좋은 웜업은 결과로 말한다. 우리는 매주 업데이트되는 데이터와 고객 리뷰로 증명한다. 강남 셔츠룸 마포 — 여기가 끝판왕이다.</p>
+ </article>
 </main>
 
 <footer class="container">
-    <p>© 2025 WARMUP.KR · 강남 셔츠룸 마포 직영 · <a href="tel:010-6279-0862">010-6279-0862</a></p>
+ <p>© 2025 WARMUP.KR · 강남 셔츠룸 마포 직영 · </p>
 </footer>
 
 <script>
-    // Hamburger menu toggle (responsive)
-    document.addEventListener('DOMContentLoaded', function() {
-        const hamburger = document.getElementById('hamburgerBtn');
-        const navLinks = document.getElementById('navLinks');
+ // Hamburger menu toggle (responsive)
+ document.addEventListener('DOMContentLoaded', function() {
+ const hamburger = document.getElementById('hamburgerBtn');
+ const navLinks = document.getElementById('navLinks');
 
-        if (hamburger && navLinks) {
-            hamburger.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
-            });
+ if (hamburger && navLinks) {
+ hamburger.addEventListener('click', function() {
+ navLinks.classList.toggle('active');
+ });
 
-            // Close menu on link click (for mobile)
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', function() {
-                    navLinks.classList.remove('active');
-                });
-            });
-        }
-    });
+ // Close menu on link click (for mobile)
+ navLinks.querySelectorAll('a').forEach(link => {
+ link.addEventListener('click', function() {
+ navLinks.classList.remove('active');
+ });
+ });
+ }
+ });
 </script>
 
 </body>
